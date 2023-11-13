@@ -1,5 +1,7 @@
 # SSIS-Airline-Ingest-Part-1
-For this project, I'm implementing an end-to-end ingest process using SSIS and SQL. In SQL, I've created three data models/tables for where the ingest data from the Excel file will go. The three data models are:
+For this project, I'm implementing an end-to-end ingest process using SSIS and SQL. 
+
+In SQL, I've created three data models/tables for where the ingest data from the Excel file will go. The three data models are:
 
 dbo.AirlineRaw: This table is to get all the data into a table without worrying about missing any data. I have set all the data types for all the columns to Varchar(200) except for AirlineID, which is an identity column.
 
@@ -18,6 +20,7 @@ I've deployed the SSIS package from SSIS to SSMS.
 In SSIS/Visual Studio, I did the following:
 
 Created the AirlineIngest Package
+
 In the Control flow, I have the following components:
 
 Execute SQL Task: To truncate the raw table for every run.
