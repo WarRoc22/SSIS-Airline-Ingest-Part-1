@@ -1,0 +1,11 @@
+The source where I got the Excel sheet to ingest is from Kaggle: 
+
+https://www.kaggle.com/datasets/iamsouravbanerjee/airline-dataset 
+
+I then made changes to the Excel sheet like creating duplicates and taking out data from different columns. For this project, I used the modified version 
+
+Here is the original version: 
+[Airline_20231001.xlsx](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/files/13342957/Airline_20231001.xlsx)
+
+Here is the modified version:
+[Airline_20231113.xlsx](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/files/13342960/Airline_20231113.xlsx)
