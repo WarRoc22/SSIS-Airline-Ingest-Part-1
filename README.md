@@ -9,7 +9,7 @@ dbo.AirlineError: This table is used for data that did not make it past the erro
 
 dbo.AirlineRepository: This table is the final resting place for the data. This will have all data that made it past the error-checking stored procedure.
 
-I've also created an error-checking stored procedure. The error-checking stored procedure will error out a record that has the following:
+I've also created an error-checking stored procedure. The error-checking stored procedure will error out any record that has the following:
 
 Missing First Name
 Missing Last Name
