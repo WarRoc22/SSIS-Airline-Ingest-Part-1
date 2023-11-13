@@ -2,11 +2,17 @@
 • For this project I'm doing an end to end ingest process using SSIS and SQL. 
 
 • In SQL I did the following: 
+.
 	• Created three data models/tables for where the ingest data from the excel file will go. The three data models is: 
+ .
 		○ dbo.AirlineRaw - This table is to get all the data into a table without worrying about missing any data. I have set all the data types for all the columns to Varchar(200) except for AirlineID which is an identity column. 
+  .
 		○ dbo.AirlineError - This table is used for data that did not make it pass the error checking stored procedure that I created. 
-		○ dbo.AirlineRepository - This table is the final resting place for the data. This will have all data that made it passed the error checking stored procedure  
+  .
+		○ dbo.AirlineRepository - This table is the final resting place for the data. This will have all data that made it passed the error checking stored procedure 
+  .
 	• Created an error checking stored procedure.   
+ .
 		○ The error checking stored procedure will error out an record that has the following 
 			§ Missing First Name 
 			§ Missing Last Name 
