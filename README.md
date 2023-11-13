@@ -11,10 +11,11 @@ dbo.AirlineRepository: This table is the final resting place for the data. This 
 
 I've also created an error-checking stored procedure. The error-checking stored procedure will error out any record that has the following:
 
-Missing First Name
-Missing Last Name
-Duplicate PassengerID
+Missing First Name,
+Missing Last Name,
+Duplicate PassengerID,
 Missing PassengerID
+
 I've deployed the SSIS package from SSIS to SSMS.
 
 In SSIS/Visual Studio, I did the following:
