@@ -25,13 +25,21 @@ Created the AirlineIngest Package
 In the Control flow, I have the following components:
 
 Execute SQL Task: To truncate the raw table for every run.
+
 Data Flow task: To get data from the Excel file to insert into the raw table in SSMS.
+
 Execute SQL task: This will run the error-checking stored procedure with data that is in dbo.AirlineRaw. If the data passes the error-checking, it will go to dbo.AirlineRepository. If it does not pass error-checking, it will go to dbo.AirlineError.
+
 File System task: This will move the Excel file to the Archive location directory that I created.
+
 Foreach Loop Container: This will look through the file directory and grab any files to ingest that have Airline in their name.
+
 In the Data Flow, I have the following components:
 
 Excel Source: Using this to extract data from the Excel document.
+
 Data Conversion: Using this to convert the data types of the columns from Unicode String to String, which is compatible with SSMS.
+
 Row Count: Using this to get a count of the number of rows.
+
 OLE DB Destination: Using this to load data into dbo.AirlineRaw.
