@@ -163,70 +163,45 @@ GO
 Here is the following SQL script to the error checking stored procedure. This will error out records that have a duplicate PassengerID, missing PassengerID, missing FirstName, or missing LastName: 
 
 USE [DBOR] 
-
 GO 
  
  
 SET ANSI_NULLS ON 
-
 GO 
 
 SET QUOTED_IDENTIFIER ON 
-
 GO 
  
  
 CREATE OR ALTER PROCEDURE [dbo].[ProcessAirlineRaw] 
-
 @LogExecutionFlag BIT = 1, 
-
 @DebugStep SMALLINT = 0 
 
 AS 
  
 SET ARITHABORT ON; 
-
 SET XACT_ABORT OFF; 
-
 SET NOCOUNT ON; 
  
 Create Table #AirlineRaw 
 ( 
-
 AirlineRawID INT NOT NULL, 
-
 PassengerID VARCHAR(200) NULL, 
-
 FirstName VARCHAR(200) NULL, 
-
 LastName VARCHAR(200) NULL, 
-
 Gender VARCHAR(200) NULL, 
-
 Age VARCHAR(200) NULL, 
-
 Nationality VARCHAR(200) NULL, 
-
 AirportName VARCHAR(200) NULL, 
-
 AirportCountryCode VARCHAR(200) NULL, 
-
 CountryName VARCHAR(200) NULL, 
-
 AirportContinents VARCHAR(200) NULL, 
-
 Continents VARCHAR(200) NULL, 
-
 DepartureDate VARCHAR(200) NULL, 
-
 ArrivalAirport VARCHAR(200) NULL,
-
 PilotName VARCHAR(200) NULL, 
-
 FlightStatus VARCHAR(200) NULL, 
-
 Errortext VARCHAR(MAX) NULL 
-
 ); 
  
  
@@ -288,10 +263,12 @@ Where ad.AirlineDupe > 1;
 UPDATE #AirlineRaw 
 SET Errortext = COALESCE(Errortext, '') + 'First Name is missing' 
 Where FirstName is Null; 
+
  
 UPDATE #AirlineRaw 
 SET Errortext = COALESCE(Errortext, '') + 'Last Name is missing' 
 Where LastName is NULL; 
+
  
 UPDATE #AirlineRaw 
 SET Errortext = COALESCE(Errortext, '') + 'PassengerID is missing' 
