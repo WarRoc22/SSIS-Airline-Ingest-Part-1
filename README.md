@@ -407,8 +407,12 @@ OLE DB Destination - Using this to load data into dbo.AirlineRaw
 
 ![DF7](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/08db5d2e-515c-418d-a208-0806959a7cf8)
 
-
 # Variables Used
+These are the variables that I used in SSIS:
+
+![V1](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/596bb316-b7e9-4b99-9e9a-3f59bd74febb)
+
+
 # Tables and Directory Before Running the SSIS Package
 # SSIS Package
 # Tables and Directory After Running the SSIS Package
