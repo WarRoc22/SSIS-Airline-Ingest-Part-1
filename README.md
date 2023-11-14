@@ -277,6 +277,7 @@ Where PassengerID is NULL;
  
 Insert into dbo.AirlineError 
 ( 
+
 PassengerID, 
 FirstName, 
 LastName, 
@@ -317,6 +318,7 @@ Where ALR.Errortext IS NOT NULL;
  
 Insert into dbo.AirlineRepository 
 ( 
+
 PassengerID, 
 FirstName, 
 LastName, 
