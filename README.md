@@ -277,36 +277,22 @@ Where PassengerID is NULL;
  
 Insert into dbo.AirlineError 
 ( 
+
 PassengerID, 
-
 FirstName, 
-
 LastName, 
-
 Gender, 
-
 Age, 
-
 Nationality, 
-
 AirportName, 
-
 AirportCountryCode, 
-
 CountryName, 
-
 AirportContinents, 
-
 Continents, 
-
 DepartureDate, 
-
 ArrivalAirport, 
-
 PilotName, 
-
 FlightStatus, 
-
 ErrorText 
 ) 
 SELECT 
