@@ -366,7 +366,21 @@ File System task - This will move the file excel file to the Archive location di
 
 Foreach Loop Container - This will look through the file directory and grab any files to ingest that have Airline in their name. 
 
+![CF1](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/d1e170d0-e762-49f3-aa59-91eb164e2141)
 
+![CF2](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/7c9629b8-c3b4-4fdb-9be9-3db4dfe7e93e)
+
+![CF3](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/aa810b36-ca2e-4e85-be11-44ce400f4bfd)
+
+![CF4](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/a7b7d4cd-4190-47aa-b383-31f56de0d47b)
+
+![CF5](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/56c06a11-a495-4472-8b16-a60cc9cf0925)
+
+![CF6](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/c0387b81-1259-4269-810e-f837f1ce7766)
+
+![CF7](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/5459f237-62de-4d21-989f-b2bc8d04726f)
+
+![CF8](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/9a99e6c1-e0e8-41f8-941a-9cfc4453bf65)
 
 # SSIS Data Flow
 # Variables Used
