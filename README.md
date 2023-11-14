@@ -353,9 +353,21 @@ FROM
 WHERE
     ALR.Errortext IS NULL;
 
-
-
 # SSIS Control Flow
+In the Control flow, I have the following components: 
+
+Execute SQL Task - to truncate the raw table for every run. 
+
+Data Flow task - To get data from the Excel file to insert into the raw table in SSMS 
+
+Execute SQL task - This will run the error checking stored procedure with data that is in dbo.AirlineRaw. If the data passes the error checking, it will go to dbo.AirlineRepository. If it does not pass error checking it will go to dbo.AirlineError. 
+
+File System task - This will move the file excel file to the Archive location directory that I created 
+
+Foreach Loop Container - This will look through the file directory and grab any files to ingest that have Airline in their name. 
+
+
+
 # SSIS Data Flow
 # Variables Used
 # Tables and Directory Before Running the SSIS Package
