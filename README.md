@@ -442,3 +442,14 @@ The file is now in the Archive location:
 ![A7](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/1812cb4a-567f-465f-93ba-1053c23dc9eb)
 
 # Deploying SSIS Package to SSMS
+![D1](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/b4f139ed-525d-43c6-860f-87a46305522f)
+
+![D2](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/28330686-441a-4435-b689-bc4a52816985)
+
+![D3](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/5d7023ad-0647-4f81-9a07-cd1c07e6e827)
+
+![D4](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/3547ad0b-08c6-4012-afea-d20f38b348aa)
+
+![D5](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/cfe732a5-f4e8-4eee-a55b-2e92c9ec8cb8)
+
+![D6](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/4074cd8c-83d0-4708-88cf-d99be34a65e0)
