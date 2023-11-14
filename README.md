@@ -47,7 +47,7 @@ OLE DB Destination: Using this to load data into dbo.AirlineRaw.
 # Excel Sheet to Ingest
 The source where I got the Excel sheet to ingest is from Kaggle: 
 
-[![image](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/942a29c9-53e6-444a-b9fd-70f2b6094c11)](url)
+[!(https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/942a29c9-53e6-444a-b9fd-70f2b6094c11)](url)
 
 
 
