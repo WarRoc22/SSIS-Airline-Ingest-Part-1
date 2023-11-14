@@ -383,6 +383,31 @@ Foreach Loop Container - This will look through the file directory and grab any 
 ![CF8](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/9a99e6c1-e0e8-41f8-941a-9cfc4453bf65)
 
 # SSIS Data Flow
+In the Data Flow I have the following components: 
+
+Excel Source - Using this to extract data from the excel document 
+
+Data Conversion - using this to convert the data types of the columns from Unicode String to String which is compatible with SSMS 
+
+Row Count - Using this to get a count of the number of rows 
+
+OLE DB Destination - Using this to load data into dbo.AirlineRaw
+
+![DF1](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/4216c6b9-7a45-44c0-b642-619ca1a37b78)
+
+![DF2](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/9cb71872-9ae0-4e2a-8731-d9e929deb002)
+
+![DF3](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/cfebcaf5-58d9-4161-b3e7-0604a5473c50)
+
+![DF4](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/bc6f777a-d927-42e9-911f-5c96facd23c1)
+
+![DF5](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/aeeabed5-3f3b-4788-b694-5fa9564923b7)
+
+![DF6](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/1c2d679f-dd16-45c1-968b-491130bb76e7)
+
+![DF7](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/08db5d2e-515c-418d-a208-0806959a7cf8)
+
+
 # Variables Used
 # Tables and Directory Before Running the SSIS Package
 # SSIS Package
