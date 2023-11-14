@@ -412,8 +412,16 @@ These are the variables that I used in SSIS:
 
 ![V1](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/596bb316-b7e9-4b99-9e9a-3f59bd74febb)
 
-
 # Tables and Directory Before Running the SSIS Package
+![B1](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/84db649c-1beb-44cc-ab94-fc1c8dcf809f)
+
+In the Airline directory, I have an excel file ready to be ingested:
+![B2](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/e61a64a6-279a-4d66-b999-fc9f0fecfa9a)
+
+
+No file currently in the Archive location: 
+![B3](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/79e44e2a-bb05-4277-90be-1c670550e59b)
+
 # SSIS Package
 # Tables and Directory After Running the SSIS Package
 # Deploying SSIS Package to SSMS
