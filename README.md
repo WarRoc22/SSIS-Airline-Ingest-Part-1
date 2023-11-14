@@ -59,9 +59,103 @@ Here is the modified version:
 
 [Airline_20231113.xlsx](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/files/13343090/Airline_20231113.xlsx)
 
-
-
 # Data Model Creation
+Here is the following SQL script that I used to create the three data models: 
+
+Use DBOR 
+Go 
+ 
+Set ANSI_NULLS ON; 
+SET QUOTED_IDENTIFIER ON; 
+Go 
+ 
+IF NOT EXISTS (Select * 
+		From INFORMATION_SCHEMA.TABLES As T 
+		Where T.TABLE_SCHEMA = 'dbo' 
+		And T.TABLE_NAME = 'AirlineRepository') 
+Begin 
+Create Table dbo.AirlineRepository 
+( 
+AirlineID Int IDENTITY(1,1) NOT NULL, 
+PassengerID Varchar(30)  NOT NULL, 
+FirstName Varchar(50)  NOT NULL, 
+LastName Varchar(50)  NOT NULL, 
+Gender Varchar(15)  NOT NULL, 
+Age Int NOT NULL, 
+Nationality Varchar(100) NOT NULL, 
+AirportName Varchar(200) NOT NULL, 
+AirportCountryCode Varchar(10)   NOT NULL, 
+CountryName Varchar(200) NOT NULL, 
+AirportContinents Varchar(10)   Not NULL, 
+Continents Varchar(100) NOT NULL, 
+DepartureDate Date NOT NULL, 
+ArrivalAirport Varchar(10) NOT NULL, 
+PilotName Varchar(200) NOT NULL, 
+FlightStatus Varchar(50) NOT NULL, 
+Constraint PK_dbo_Airline Primary Key Clustered (AirlineID) 
+); 
+End; 
+GO 
+ 
+ 
+IF NOT EXISTS (Select * 
+		From INFORMATION_SCHEMA.TABLES As T 
+		Where T.TABLE_SCHEMA = 'dbo' 
+		And T.TABLE_NAME = 'AirlineRaw') 
+Begin 
+Create Table dbo.AirlineRaw 
+( 
+AirlineRawID Int IDENTITY(1,1) NOT NULL, 
+PassengerID Varchar(200) NULL, 
+FirstName Varchar(200) NULL, 
+LastName Varchar(200) NULL, 
+Gender Varchar(200) NULL, 
+Age Varchar(200) NULL, 
+Nationality Varchar(200) NULL, 
+AirportName Varchar(200) NULL, 
+AirportCountryCode Varchar(200) NULL, 
+CountryName Varchar(200) NULL, 
+AirportContinents Varchar(200) NULL, 
+Continents Varchar(200) NULL, 
+DepartureDate Varchar(200) NULL, 
+ArrivalAirport Varchar(200) NULL, 
+PilotName Varchar(200) NULL, 
+FlightStatus Varchar(200) NULL, 
+Constraint PK_dbo_AirlineRaw Primary Key Clustered (AirlineRawID) 
+); 
+End; 
+GO 
+ 
+
+IF NOT EXISTS (Select * 
+		From INFORMATION_SCHEMA.TABLES As T 
+		Where T.TABLE_SCHEMA = 'dbo' 
+		And T.TABLE_NAME = 'AirlineError') 
+Begin 
+Create Table dbo.AirlineError 
+( 
+AirlineErrorID Int IDENTITY(1,1) NOT NULL, 
+PassengerID Varchar(200) NULL, 
+FirstName Varchar(200) NULL, 
+LastName Varchar(200) NULL, 
+Gender Varchar(200) NULL, 
+Age Varchar(200) NULL, 
+Nationality Varchar(200) NULL, 
+AirportName Varchar(200) NULL, 
+AirportCountryCode Varchar(200) NULL, 
+CountryName Varchar(200) NULL, 
+AirportContinents Varchar(200) NULL, 
+Continents Varchar(200) NULL, 
+DepartureDate Varchar(200) NULL, 
+ArrivalAirport Varchar(200) NULL, 
+PilotName Varchar(200) NULL, 
+FlightStatus Varchar(200) NULL, 
+ErrorText Varchar(1000)NULL, 
+Constraint PK_dbo_AirlineError Primary Key Clustered (AirlineErrorID) 
+); 
+End; 
+GO 
+
 # Error Checking Stored Procedure
 # SSIS Control Flow
 # SSIS Data Flow
