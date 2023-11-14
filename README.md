@@ -43,3 +43,20 @@ Data Conversion: Using this to convert the data types of the columns from Unicod
 Row Count: Using this to get a count of the number of rows.
 
 OLE DB Destination: Using this to load data into dbo.AirlineRaw.
+
+# Excel Sheet to Ingest
+The source where I got the Excel sheet to ingest is from Kaggle: 
+
+[![image](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/942a29c9-53e6-444a-b9fd-70f2b6094c11)](url)
+
+
+
+# Data Model Creation
+# Error Checking Stored Procedure
+# SSIS Control Flow
+# SSIS Data Flow
+# Variables Used
+# Tables and Directory Before Running the SSIS Package
+# SSIS Package
+# Tables and Directory After Running the SSIS Package
+# Deploying SSIS Package to SSMS
