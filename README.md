@@ -418,10 +418,27 @@ These are the variables that I used in SSIS:
 In the Airline directory, I have an excel file ready to be ingested:
 ![B2](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/e61a64a6-279a-4d66-b999-fc9f0fecfa9a)
 
-
 No file currently in the Archive location: 
 ![B3](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/79e44e2a-bb05-4277-90be-1c670550e59b)
 
-# SSIS Package
 # Tables and Directory After Running the SSIS Package
+![A1](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/3b3915a9-e7f3-4f8e-a775-f9e405ed570a)
+
+![A2](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/12fbbb85-c47e-4e88-9ac5-1091d59d319b)
+
+All records made it from the excel sheet to dbo.AirlineRaw  
+![A3](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/5a0e5747-0a73-4c55-98f8-5226b75801e4)
+
+These are the records that made it to dbo.AirlineError. These are the records that did not make it pass the error checking procedure. The ErrorText column gives a description of why. 
+![A4](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/740c8efc-f79e-4aa1-85de-5eaee375cb63)
+
+These are the records that made it to dbo.AirlineRepository. These are the records that made it through the error checking stored procedure. 
+![A5](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/d653a5d7-679b-4e4f-be13-cb27d0b69608)
+
+In the Airline directory the file now has moved to the archived folder since the SSIS Package was successfully completed:
+![A6](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/42850167-87ff-47f5-a151-e161c731e21d)
+
+The file is now in the Archive location: 
+![A7](https://github.com/WarRoc22/SSIS-Airline-Ingest-Part-1/assets/148729293/1812cb4a-567f-465f-93ba-1053c23dc9eb)
+
 # Deploying SSIS Package to SSMS
